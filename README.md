@@ -1,0 +1,1 @@
+This repository contains a Dockerfile that produces a build error due to an incorrect file path.  The `requirements.txt` file is assumed to exist in the root directory of the build context, but this is often incorrect. The fix involves copying the requirements.txt file before running `pip3 install`.  This updated file showcases a common error and provides the corrected solution.
